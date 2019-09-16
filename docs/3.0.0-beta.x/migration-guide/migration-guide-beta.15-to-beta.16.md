@@ -183,6 +183,14 @@ module.exports = () => {
 };
 ```
 
+**Empty Function**
+
+When updating `config/functions/bootstrap.js` to remove `cb()` a bootstrap function is required. If you're not using this feature drop in a blank sync function: 
+```js
+module.exports = () => {};
+```
+
+
 ### Custom hooks
 
 If you have custom [hooks](../advanced/hooks.md) in your project, the `initialize` function will not receive a callback anymore. You can either use an async function, return a promise or simply run a synchronous function.
