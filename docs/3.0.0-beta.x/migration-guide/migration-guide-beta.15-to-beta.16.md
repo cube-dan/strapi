@@ -8,6 +8,8 @@ Start by upgrading all your strapi package version to `3.0.0-beta.16`.
 
 Your package.json would look like this:
 
+If you're using bookshelf (SQLite3, PostgreSQL, MySQL, MariaDB, MS SQL, or Oracle)
+
 ```json
 {
   //...
@@ -24,6 +26,28 @@ Your package.json would look like this:
     "strapi-plugin-upload": "3.0.0-beta.16",
     "strapi-plugin-users-permissions": "3.0.0-beta.16",
     "strapi-utils": "3.0.0-beta.16"
+  }
+}
+```
+
+If you're using mongoose (MongoDB)
+
+```json
+{
+  //...
+  "dependencies": {
+    "strapi": "^3.0.0-beta.16",
+    "strapi-admin": "^3.0.0-beta.16",
+    "strapi-hook-mongoose": "^3.0.0-beta.16",
+    "strapi-plugin-content-manager": "^3.0.0-beta.16",
+    "strapi-plugin-content-type-builder": "^3.0.0-beta.16",
+    "strapi-plugin-documentation": "3.0.0-beta.16",
+    "strapi-plugin-email": "3.0.0-beta.16",
+    "strapi-plugin-graphql": "3.0.0-beta.16",
+    "strapi-plugin-settings-manager": "^3.0.0-beta.16",
+    "strapi-plugin-upload": "^3.0.0-beta.16",
+    "strapi-plugin-users-permissions": "^3.0.0-beta.16",
+    "strapi-utils": "^3.0.0-beta.16"
   }
 }
 ```
